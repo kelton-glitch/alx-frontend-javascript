@@ -1,11 +1,15 @@
+/**
+ * Gives the sample output of two given values
+ * @return {value}
+ */
 export default function taskBlock(trueOrFalse) {
-  let task = false;
-  let task2 = true;
+    let task = false;
+    let task2 = true;
 
-  if (trueOrFalse) {
-    task = false;
-    task2 = true;
-  }
+    if (trueOrFalse) {
+        task = false;
+        task2 = true;
+    }
 
-  return [task, task2];
+    return [task, task2];
 }
