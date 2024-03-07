@@ -1,4 +1,4 @@
-export default function getResponsefromAPI() {
+export default function getResponsefromAPI () {
   return new Promise((resolve) => {
     setTimeout(() => {
       const response = { data: 'true' };
