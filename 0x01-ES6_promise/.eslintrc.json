@@ -1,39 +1,13 @@
 {
     "env": {
-        "browser": false,
+        "browser": true,
         "commonjs": true,
-        "es6": true,
-        "jest": true
+        "es2021": true
     },
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
-    "extends": [
-        "airbnb-base",
-        "plugin:jest/all"
-    ],
+    "extends": "airbnb-base",
     "parserOptions": {
         "ecmaVersion": "latest"
     },
-    "plugins": [
-        "jest"
-    ],
     "rules": {
-        "no-console": "off",
-        "no-shadow": "off",
-        "no-restricted-syntax": [
-            "error",
-            "LabeledStatement",
-            "WithStatement"
-        ]
-    },
-    "overrides": [
-        {
-            "files": [
-                "*.js"
-            ],
-            "excludedFiles": "babel.config.js"
-        }
-    ]
+    }
 }
