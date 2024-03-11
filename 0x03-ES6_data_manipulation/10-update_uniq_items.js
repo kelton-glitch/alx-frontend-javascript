@@ -3,13 +3,10 @@ export default function updateUniqueItems(groceries) {
     throw new Error('Cannot process');
   }
 
-  const updatedGroceries = new Map();
-  for (const [item, quantity] of groceries.entries()) {
+  for (const [item, quantity] of groceries) {
     if (quantity === 1) {
-      updatedGroceries.set(item, 100);
-    } else {
-      updatedGroceries.set(item, quantity);
+      groceries.set(item, 100);
     }
   }
-  return updatedGroceries;
+  return groceries;
 }
