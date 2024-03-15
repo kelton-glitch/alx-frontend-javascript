@@ -24,9 +24,9 @@ console.log(teacher1);
 const director1: Directors = {
   firstName: 'John',
   lastName: 'Smith',
-  location: 'America'
+  location: 'America',
   fullTimeEmployee: true,
-  numberofReports: 17,
+  numberOfReports: 17,
 };
 
 console.log(director1);
@@ -35,7 +35,7 @@ interface printTeacherFunction {
   (firstname: string, lastName: string): string;
 }
 
-export const printTeacherFunction = (firstName: string, lastName: string): string => `${firstName[0]}. ${lastName}`;
+export const printTeacher = (firstName: string, lastName: string): string => `${firstName[0]}. ${lastName}`;
 
 console.log(printTeacher('john', 'doe'));
 
